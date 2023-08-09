@@ -20,7 +20,7 @@ const App =() =>{
       <h1>Anime</h1>
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Home/>}/>
+          <Route path="/" element={<Home />}/>
           <Route path="/anime" element={<AnimeList />}/>
           <Route path="/anime/:id" element={<Anime />}/>
         </Routes>

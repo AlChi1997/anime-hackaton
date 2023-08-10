@@ -1,0 +1,110 @@
+.homepage {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  margin: -1rem;
+  margin-right: -1rem;
+  margin-bottom: -1rem;
+  overflow: hidden;
+
+  &__link {
+    margin-top: 9.375rem;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: fit-content;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+
+    &--image {
+      display: flex;
+      margin: 20px;
+      border-radius: 20px;
+      width: 200px;
+      height: 200px;
+      flex-wrap: wrap;
+    }
+  }
+
+  &__movie-logo {
+    display: flex;
+    width: 33%;
+  }
+
+  .background-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    animation: changeBackground 8s infinite;
+  }
+
+  .background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    z-index: -1;
+  }
+
+  .background-image.visible {
+    opacity: 1;
+  }
+
+  .content-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: fit-content;
+    height: auto;
+    background-color: inherit;
+    align-items: flex-end;
+    justify-content: top;
+  }
+}
+
+@keyframes changeBackground {
+
+  0%,
+  100% {
+    opacity: 0;
+  }
+
+  20%,
+  80% {
+    opacity: 1;
+  }
+}
+
+.search {
+  &-results {
+    position: absolute;
+    margin-top: 1.875rem;
+  }
+
+  &-bar {
+
+    position: absolute;
+  }
+}
+
+
+
+.homepage__title {
+  display: flex;
+  justify-content: center;
+  font-family: "Exo", sans-serif;
+  font-size: 5vw;
+  font-weight: 100vw;
+  height: 100%;
+  margin: auto;
+  text-transform: uppercase;
+  color: #00000094;
+
+}

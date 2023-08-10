@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import {FaSearch} from 'react-icons/fa';
+import './Search.scss'
 
 export const SearchBar = ({setResults}) => {
     const [searchTerm, setSearchTerm]  = useState('');
@@ -29,7 +30,7 @@ export const SearchBar = ({setResults}) => {
     return (
         <div className="search-bar">
         <FaSearch id="search-icon" />
-            <input placeholder="Type to Search" 
+            <input placeholder="Which anime for today?" 
                 value={searchTerm} onChange={(e)=> handleChange(e.target.value)}/>
         </div>
     )

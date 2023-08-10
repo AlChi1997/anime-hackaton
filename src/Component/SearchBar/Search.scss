@@ -1,0 +1,14 @@
+.search-results {
+    border: 1px solid #ccc;
+    
+    max-height: 300px;
+    width: fit-content;
+    overflow-y: auto;
+    background-color: white;
+  }
+
+  .search-bar{
+    width: fit-content;
+    background-color: white;
+    border: .25rem solid black;
+  }

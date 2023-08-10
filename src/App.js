@@ -9,7 +9,7 @@ const App =() =>{
   
     return (
     <div className="App">
-      <h1>Anime</h1>
+      {/* <h1>Anime</h1> */}
       <BrowserRouter>
         <Routes>
           <Route path="/" element={<Homepage />}/>

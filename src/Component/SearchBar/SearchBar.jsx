@@ -16,9 +16,9 @@ export const SearchBar = ({setResults}) => {
                 anime.attributes &&
                 anime.attributes.canonicalTitle.toLowerCase().includes(value.toLowerCase())
                 );
-    });
-        setResults(results);
-    })
+                });
+            setResults(results);
+        })
     }
 
     const handleChange = (value) => {

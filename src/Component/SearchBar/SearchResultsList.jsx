@@ -1,6 +1,6 @@
 import React from 'react';
 import SearchResult from './SearchResult';
-
+import './Search.scss'
 export const SearchResultsList = ({results}) => {
     return (
         <div className="search-results">

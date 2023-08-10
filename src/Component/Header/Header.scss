@@ -1,0 +1,27 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+width: 100vw;
+height: auto;
+backdrop-filter: blur(50px);
+
+&__logo{
+    width:100%;
+}
+&__image{
+    display: flex;
+    margin:10px;
+    border-radius: 20px;
+    width: 100px;
+    height: 100px;
+}
+&__title{
+    color: rgb(72, 86, 114);
+    height: 50%;
+    display: flex;
+    border-radius: 4px;
+    justify-content: center;
+    align-items: center;
+}
+}

@@ -10,10 +10,9 @@ export default function Header() {
 
     return (
       <header className="header">
-           <Link to="/" >
+           <Link to="/" className='header__link' >
         <div className="header__logo"><img alt="imgh1" src={imgh1} className="header__image" /></div>
         </Link>
-<div><h1 className='header__title'>Let Find Some Anime</h1></div>
         <div className="content-container">
                 <SearchBar setResults={setResults} />
                 <SearchResultsList results={results} />

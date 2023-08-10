@@ -11,7 +11,7 @@ backdrop-filter: blur(50px);
 }
 &__image{
     display: flex;
-    margin:10px;
+    margin:20px;
     border-radius: 20px;
     width: 100px;
     height: 100px;
@@ -23,5 +23,8 @@ backdrop-filter: blur(50px);
     border-radius: 4px;
     justify-content: center;
     align-items: center;
+}
+&__link{
+    display: flex;
 }
 }

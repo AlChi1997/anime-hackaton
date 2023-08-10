@@ -8,3 +8,122 @@
     align-items: flex-end;
     justify-content: top; 
 }
+
+.header{
+    background-color:#effaf6;
+}
+
+.search{
+    &-results{
+    position: absolute;
+    margin-top:1.875rem;
+    z-index: 1;
+  }
+  &-bar{
+    position: relative;
+  }
+  }
+
+.animepage{
+    position:relative;
+    background-color:#effaf6;
+}
+
+.overlay{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    background-color:transparent;
+}
+
+.anime{
+    margin:32px 0 0;
+    padding-bottom:32px;
+    position:relative;
+
+    &__theme{
+        width:100%;
+        height:40vh;
+        position:relative;
+
+        &-img{
+            width:100%;
+            height:100%;
+            object-fit: cover;
+            position:absolute;
+            top:0;
+            left:0;
+        }
+    }
+
+    &__title{
+        font-size:30px;
+    }
+
+    &__block{
+        display:flex;
+        margin:0 24px;
+    }
+
+    &__extra{
+        display:flex;
+        flex-wrap:wrap;
+        align-content:center;
+        padding:0 36px;
+    }
+
+    &__synopsis{
+        margin-bottom:32px;
+        font-size:18px;
+    }
+
+    &__addtional-title{
+        font-size:18px;
+    }
+
+    &__rating,&__showtype,&__episode,&__status,&__aired{
+        padding-top:6px;
+    }
+
+    &__genre-title{
+        font-size:18px;
+    }
+
+    &__genre-name{
+        padding-top:6px;
+    }
+
+    &__data{
+        display:flex;
+        width:60%;
+        justify-content: space-between;
+    }
+
+    &__streaminglinks{
+        width:30%;
+    }
+
+    &__streaminglinks-title{
+        font-size:18px;
+    }
+
+    &__streaminglinks-box{
+        padding-top:5px;
+    }
+
+    &__related{
+        margin:32px 24px 0;
+
+        &-container{
+            width:100%;
+            display:flex;
+            justify-content:space-between;
+        }
+
+        &-box{
+            width:15%;
+        }
+    }
+}

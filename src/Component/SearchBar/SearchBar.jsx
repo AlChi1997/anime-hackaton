@@ -31,7 +31,8 @@ export const SearchBar = ({setResults}) => {
         <div className="search-bar">
         <FaSearch id="search-icon" />
             <input placeholder="Which anime for today?" 
-                value={searchTerm} onChange={(e)=> handleChange(e.target.value)}/>
+                value={searchTerm} 
+                onChange={(e)=> handleChange(e.target.value)} />
         </div>
     )
 }

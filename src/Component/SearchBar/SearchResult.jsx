@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 export const SearchResult = ({result}) => {
     return (
         <div className="search-result">
-            <Link to={`/anime/${result.attributes.canonicalTitle}`}>
+            <Link to={{pathname: `/anime/${encodeURIComponent(result.attributes.canonicalTitle)}`}}>
                 {result.attributes.canonicalTitle}
             </Link>
         </div>

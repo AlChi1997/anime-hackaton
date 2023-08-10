@@ -7,7 +7,7 @@ export const SearchBar = ({setResults}) => {
 
     const fetchData =(value) => {
 
-        fetch(`https://kitsu.io/api/edge/anime?filter[text]=${value}&page[limit]=20`)
+        fetch(`https://kitsu.io/api/edge/anime?filter[text]=${encodeURIComponent(value)}&page[limit]=20`)
         .then((res) => res.json())
         .then((json) => {
             const results= json.data.filter((anime) => {
